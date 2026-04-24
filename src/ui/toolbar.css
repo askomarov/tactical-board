@@ -202,3 +202,7 @@
 .toolbar-btn--primary:hover {
   background: rgba(170, 59, 255, 0.5);
 }
+
+.telegram-app #btn-save {
+  display: none;
+}
