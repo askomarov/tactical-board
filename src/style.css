@@ -1,0 +1,24 @@
+@import "./board/board.css";
+@import "./ui/toolbar.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  background: #0f0f12;
+  color: #e8e6ed;
+}
+
+#app {
+  min-height: 100dvh;
+}
