@@ -337,8 +337,7 @@ export function createPlacedObjectsState(): {
           e.kind === "ball" ? images.ball : e.team === "red" ? images.playerRed : images.playerBlue;
         ctx.drawImage(img, cx - half, cy - half, size, size);
         if (e.kind === "player") {
-          const num =
-            e.slotIndex !== undefined ? e.slotIndex + 1 : (e.jersey ?? undefined);
+          const num = e.slotIndex !== undefined ? e.slotIndex + 1 : (e.jersey ?? undefined);
           if (num !== undefined) drawPlayerJersey(ctx, cx, cy, size, num);
         }
       }
