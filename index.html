@@ -18,7 +18,9 @@
                     document.body.classList.add("telegram-app");
                     const tg = window.Telegram.WebApp;
                     tg.ready();
-                    tg.expand(); // Разворачивает на максимально доступную высоту
+                    // tg.expand(); // Разворачивает на максимально доступную высоту
+                    tg.enableClosingConfirmation();
+                    tg.disableVerticalSwipes();
 
                     // Для Mini Apps 2.0 (настоящий фулскрин)
                     if (tg.requestFullscreen) {
