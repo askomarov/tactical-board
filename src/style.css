@@ -17,6 +17,11 @@ body {
   font-family: system-ui, "Segoe UI", Roboto, sans-serif;
   background: #0f0f12;
   color: #e8e6ed;
+  user-select: none;
+
+  @media (max-width: 768px) {
+    padding-top: 2rem;
+  }
 }
 
 #app {
